@@ -1,25 +1,392 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cFd-gf-Io2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--소개-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InfoVC" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="UBf-r7-d6i"/>
+                        <viewControllerLayoutGuide type="bottom" id="35f-qi-sfb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpH-wC-mqk" customClass="GADBannerView">
+                                <rect key="frame" x="140" y="501" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IL5-NO-9Eb"/>
+                                    <constraint firstAttribute="width" constant="320" id="rYa-o2-GMl"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정진화 테니스레슨" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjx-Pt-d4p">
+                                <rect key="frame" x="195" y="20" width="210" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Snb-b8-mqB"/>
+                                    <constraint firstAttribute="width" constant="210" id="jfP-M3-1eM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jfP-M3-1eM"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-iphone" translatesAutoresizingMaskIntoConstraints="NO" id="bBT-zU-cuq">
+                                <rect key="frame" x="348" y="101" width="210" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="4AJ-Oc-lXv"/>
+                                    <constraint firstAttribute="height" constant="187" id="8y5-Ag-wdj">
+                                        <variation key="widthClass=compact" constant="192"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="318" id="Npr-Xo-okP"/>
+                                    <constraint firstAttribute="height" constant="350" id="UXl-3F-DUU"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8y5-Ag-wdj"/>
+                                        <exclude reference="Npr-Xo-okP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="4AJ-Oc-lXv"/>
+                                        <include reference="8y5-Ag-wdj"/>
+                                        <exclude reference="Npr-Xo-okP"/>
+                                        <exclude reference="UXl-3F-DUU"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7fK-zc-XLH">
+                                <rect key="frame" x="67" y="101" width="273" height="392"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">안녕하십니까? 테니스넷(tennisnet.co.kr)운영자 정진화입니다.
+정진화테니스레슨 동영상을 언제, 어디서, 누구나, 쉽게 접근하여 볼 수 있도록 테니스기술(서브, 포핸드, 백핸드, 포핸드발리, 백핸드발리, 스매쉬, 리턴, 로브, 어프로치샷)을 찾기 쉽게 정리하였습니다. 레슨동영상을 보시고 테니스코트에서 연습하여 테니스를 통해서 건강하고 행복한 삶을 영위하시기를 바랍니다.
+
+테니스넷 : http://www.tennisnet.co.kr/</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GpH-wC-mqk" firstAttribute="top" secondItem="Rjx-Pt-d4p" secondAttribute="bottom" constant="424" id="0VC-KX-Zda"/>
+                            <constraint firstItem="Rjx-Pt-d4p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="73" id="0uQ-AP-6ef"/>
+                            <constraint firstAttribute="trailing" secondItem="Rjx-Pt-d4p" secondAttribute="trailing" constant="95" id="2Jz-0v-0JN"/>
+                            <constraint firstItem="7fK-zc-XLH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="3iP-G5-iiP"/>
+                            <constraint firstItem="GpH-wC-mqk" firstAttribute="top" secondItem="bBT-zU-cuq" secondAttribute="bottom" constant="50" id="7qv-Hd-llu"/>
+                            <constraint firstAttribute="trailing" secondItem="Rjx-Pt-d4p" secondAttribute="trailing" constant="195" id="859-dR-Mbt"/>
+                            <constraint firstItem="Rjx-Pt-d4p" firstAttribute="top" secondItem="UBf-r7-d6i" secondAttribute="bottom" id="AVY-rO-cOH"/>
+                            <constraint firstItem="Rjx-Pt-d4p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AXL-sz-9Hw"/>
+                            <constraint firstAttribute="trailing" secondItem="bBT-zU-cuq" secondAttribute="trailing" constant="42" id="Cbr-ew-mB4"/>
+                            <constraint firstItem="bBT-zU-cuq" firstAttribute="leading" secondItem="7fK-zc-XLH" secondAttribute="trailing" constant="8" id="DQq-47-DbA"/>
+                            <constraint firstItem="bBT-zU-cuq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FNw-l3-xgY"/>
+                            <constraint firstItem="GpH-wC-mqk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mbr-gf-EW0"/>
+                            <constraint firstItem="Rjx-Pt-d4p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="95" id="QDa-AO-HVR"/>
+                            <constraint firstItem="GpH-wC-mqk" firstAttribute="baseline" secondItem="7fK-zc-XLH" secondAttribute="bottom" constant="58" id="QIz-3t-qPc"/>
+                            <constraint firstItem="7fK-zc-XLH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QgS-rO-gM5"/>
+                            <constraint firstItem="7fK-zc-XLH" firstAttribute="top" secondItem="Rjx-Pt-d4p" secondAttribute="bottom" constant="24" id="Uyn-iK-dYy">
+                                <variation key="widthClass=compact" constant="195"/>
+                            </constraint>
+                            <constraint firstItem="bBT-zU-cuq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="V85-pB-0ni">
+                                <variation key="widthClass=compact" constant="57"/>
+                            </constraint>
+                            <constraint firstItem="7fK-zc-XLH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="V8w-gg-fds"/>
+                            <constraint firstItem="7fK-zc-XLH" firstAttribute="top" secondItem="Rjx-Pt-d4p" secondAttribute="bottom" constant="24" id="WZy-jG-ju6"/>
+                            <constraint firstAttribute="trailing" secondItem="7fK-zc-XLH" secondAttribute="trailing" constant="66" id="We4-dQ-0Rh"/>
+                            <constraint firstItem="GpH-wC-mqk" firstAttribute="top" secondItem="Rjx-Pt-d4p" secondAttribute="bottom" constant="424" id="Wwg-Pn-lxT"/>
+                            <constraint firstItem="Rjx-Pt-d4p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="195" id="YVT-dt-jRV"/>
+                            <constraint firstItem="bBT-zU-cuq" firstAttribute="top" secondItem="Rjx-Pt-d4p" secondAttribute="bottom" constant="24" id="aIV-J4-Wet">
+                                <variation key="widthClass=compact" constant="-5"/>
+                            </constraint>
+                            <constraint firstItem="35f-qi-sfb" firstAttribute="top" secondItem="GpH-wC-mqk" secondAttribute="bottom" id="c5x-Zx-8Ep"/>
+                            <constraint firstItem="Rjx-Pt-d4p" firstAttribute="top" secondItem="UBf-r7-d6i" secondAttribute="bottom" id="cI2-TV-GQA"/>
+                            <constraint firstItem="7fK-zc-XLH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="dIj-up-6EB"/>
+                            <constraint firstAttribute="trailing" secondItem="7fK-zc-XLH" secondAttribute="trailing" constant="20" id="dmA-M4-H4d"/>
+                            <constraint firstItem="7fK-zc-XLH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e4C-iY-xfX"/>
+                            <constraint firstAttribute="trailing" secondItem="bBT-zU-cuq" secondAttribute="trailing" constant="41" id="gqc-5i-dAj">
+                                <variation key="widthClass=compact" constant="57"/>
+                            </constraint>
+                            <constraint firstItem="7fK-zc-XLH" firstAttribute="top" secondItem="bBT-zU-cuq" secondAttribute="bottom" constant="14" id="h0u-37-HP2">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="Rjx-Pt-d4p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="73" id="iKl-8u-3ez"/>
+                            <constraint firstAttribute="trailing" secondItem="Rjx-Pt-d4p" secondAttribute="trailing" constant="73" id="iPk-OZ-bbz"/>
+                            <constraint firstItem="GpH-wC-mqk" firstAttribute="top" secondItem="7fK-zc-XLH" secondAttribute="bottom" constant="14" id="iz7-jB-NyB">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="7fK-zc-XLH" secondAttribute="trailing" constant="20" id="qMa-Oa-JSe"/>
+                            <constraint firstItem="bBT-zU-cuq" firstAttribute="top" secondItem="Rjx-Pt-d4p" secondAttribute="bottom" constant="24" id="saZ-8p-uTy"/>
+                            <constraint firstAttribute="trailing" secondItem="Rjx-Pt-d4p" secondAttribute="trailing" constant="73" id="vav-RV-qkQ"/>
+                            <constraint firstItem="Rjx-Pt-d4p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vrr-St-WgV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3iP-G5-iiP"/>
+                                <exclude reference="QgS-rO-gM5"/>
+                                <exclude reference="WZy-jG-ju6"/>
+                                <exclude reference="We4-dQ-0Rh"/>
+                                <exclude reference="dIj-up-6EB"/>
+                                <exclude reference="dmA-M4-H4d"/>
+                                <exclude reference="e4C-iY-xfX"/>
+                                <exclude reference="h0u-37-HP2"/>
+                                <exclude reference="qMa-Oa-JSe"/>
+                                <exclude reference="0uQ-AP-6ef"/>
+                                <exclude reference="2Jz-0v-0JN"/>
+                                <exclude reference="QDa-AO-HVR"/>
+                                <exclude reference="cI2-TV-GQA"/>
+                                <exclude reference="iKl-8u-3ez"/>
+                                <exclude reference="iPk-OZ-bbz"/>
+                                <exclude reference="vav-RV-qkQ"/>
+                                <exclude reference="vrr-St-WgV"/>
+                                <exclude reference="FNw-l3-xgY"/>
+                                <exclude reference="V85-pB-0ni"/>
+                                <exclude reference="gqc-5i-dAj"/>
+                                <exclude reference="saZ-8p-uTy"/>
+                                <exclude reference="0VC-KX-Zda"/>
+                                <exclude reference="7qv-Hd-llu"/>
+                                <exclude reference="Wwg-Pn-lxT"/>
+                                <exclude reference="iz7-jB-NyB"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="3iP-G5-iiP"/>
+                                <exclude reference="V8w-gg-fds"/>
+                                <exclude reference="WZy-jG-ju6"/>
+                                <exclude reference="We4-dQ-0Rh"/>
+                                <exclude reference="dIj-up-6EB"/>
+                                <include reference="dmA-M4-H4d"/>
+                                <include reference="e4C-iY-xfX"/>
+                                <include reference="h0u-37-HP2"/>
+                                <exclude reference="qMa-Oa-JSe"/>
+                                <include reference="0uQ-AP-6ef"/>
+                                <exclude reference="2Jz-0v-0JN"/>
+                                <exclude reference="859-dR-Mbt"/>
+                                <exclude reference="QDa-AO-HVR"/>
+                                <exclude reference="YVT-dt-jRV"/>
+                                <exclude reference="cI2-TV-GQA"/>
+                                <exclude reference="iKl-8u-3ez"/>
+                                <exclude reference="iPk-OZ-bbz"/>
+                                <include reference="vav-RV-qkQ"/>
+                                <exclude reference="vrr-St-WgV"/>
+                                <exclude reference="Cbr-ew-mB4"/>
+                                <exclude reference="DQq-47-DbA"/>
+                                <include reference="FNw-l3-xgY"/>
+                                <include reference="V85-pB-0ni"/>
+                                <include reference="gqc-5i-dAj"/>
+                                <exclude reference="0VC-KX-Zda"/>
+                                <exclude reference="7qv-Hd-llu"/>
+                                <exclude reference="QIz-3t-qPc"/>
+                                <include reference="iz7-jB-NyB"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <tabBarItem key="tabBarItem" title="소개" image="home-7" id="MOD-uL-zlD"/>
+                    <connections>
+                        <outlet property="Label" destination="Rjx-Pt-d4p" id="n7v-AJ-GqU"/>
+                        <outlet property="bannerView" destination="GpH-wC-mqk" id="RVJ-bc-S2d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1119" y="47"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DvK-bD-DoX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cFd-gf-Io2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Cmh-gl-K5o">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="wZs-Mo-oQw"/>
+                        <segue destination="sd3-wl-edR" kind="relationship" relationship="viewControllers" id="4Nx-aY-dEG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3v-Af-ffV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400" y="372"/>
+        </scene>
+        <!--정진화 테니스레슨-->
+        <scene sceneID="gQO-Ty-mXO">
+            <objects>
+                <tableViewController id="MXc-jJ-w62" customClass="PlayListTVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" id="lJu-O5-snB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayListCell" id="Nkp-YI-V2B" customClass="PlayListTVCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="300"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="left" tableViewCell="Nkp-YI-V2B" id="xts-dM-KOD">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="299"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U79-RR-3pB">
+                                            <rect key="frame" x="100" y="0.0" width="400" height="299"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="U79-RR-3pB" firstAttribute="top" secondItem="xts-dM-KOD" secondAttribute="top" id="FGk-WB-wLR"/>
+                                        <constraint firstItem="U79-RR-3pB" firstAttribute="centerY" secondItem="xts-dM-KOD" secondAttribute="centerY" id="JbY-n4-nDu"/>
+                                        <constraint firstItem="U79-RR-3pB" firstAttribute="centerX" secondItem="xts-dM-KOD" secondAttribute="centerX" id="cAf-ad-mvp"/>
+                                        <constraint firstItem="U79-RR-3pB" firstAttribute="leading" secondItem="xts-dM-KOD" secondAttribute="leading" constant="100" id="dgc-iJ-H7z">
+                                            <variation key="widthClass=compact" constant="50"/>
+                                        </constraint>
+                                        <constraint firstAttribute="trailing" secondItem="U79-RR-3pB" secondAttribute="trailing" constant="100" id="yes-Hw-puN">
+                                            <variation key="widthClass=compact" constant="50"/>
+                                        </constraint>
+                                        <constraint firstAttribute="bottom" secondItem="U79-RR-3pB" secondAttribute="bottom" id="znA-nU-Ir5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <connections>
+                                    <outlet property="Image" destination="U79-RR-3pB" id="3wW-a6-Mxc"/>
+                                    <segue destination="7ag-g8-ue1" kind="show" identifier="ShowPlayListItem" id="lwE-RV-cGE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MXc-jJ-w62" id="DHg-CM-Wds"/>
+                            <outlet property="delegate" destination="MXc-jJ-w62" id="YEc-Ww-Ize"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="정진화 테니스레슨" id="Jk8-Yv-CWv"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whx-UZ-4sD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2115" y="730"/>
+        </scene>
+        <!--영상-->
+        <scene sceneID="bc0-mr-c9X">
+            <objects>
+                <tableViewController id="7ag-g8-ue1" customClass="PlayListItemTVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LRy-Xh-Swu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayListItemCell" rowHeight="45" id="IeJ-i3-TTM" customClass="PlayListItemTVCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="45"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="left" tableViewCell="IeJ-i3-TTM" id="gXT-Qc-f70">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pER-DV-Ja5">
+                                            <rect key="frame" x="78" y="0.0" width="489" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="XdL-YF-MlT"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kjX-TG-nyu">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="MNK-vD-3fE"/>
+                                                <constraint firstAttribute="height" constant="45" id="SXh-yH-LP1"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="kjX-TG-nyu" firstAttribute="centerY" secondItem="gXT-Qc-f70" secondAttribute="centerY" id="84M-iW-jZf"/>
+                                        <constraint firstAttribute="trailing" secondItem="pER-DV-Ja5" secondAttribute="trailing" id="T6f-dk-u3j"/>
+                                        <constraint firstItem="kjX-TG-nyu" firstAttribute="leading" secondItem="gXT-Qc-f70" secondAttribute="leading" id="dq1-Ev-0it"/>
+                                        <constraint firstItem="pER-DV-Ja5" firstAttribute="top" secondItem="gXT-Qc-f70" secondAttribute="top" id="j7z-oO-G52"/>
+                                        <constraint firstItem="pER-DV-Ja5" firstAttribute="leading" secondItem="kjX-TG-nyu" secondAttribute="trailing" constant="3" id="qLj-em-b1l"/>
+                                        <constraint firstItem="kjX-TG-nyu" firstAttribute="top" secondItem="gXT-Qc-f70" secondAttribute="top" id="szy-49-4Bs"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Image" destination="kjX-TG-nyu" id="mzk-Hr-veX"/>
+                                    <outlet property="Label" destination="pER-DV-Ja5" id="TBm-wx-iTU"/>
+                                    <segue destination="q9y-JO-85V" kind="show" identifier="ShowVideo" id="sxh-WC-zej"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7ag-g8-ue1" id="6oP-jc-viE"/>
+                            <outlet property="delegate" destination="7ag-g8-ue1" id="0H7-i1-wOF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="영상" id="Eaw-Wx-88R"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rvg-t5-T7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3048.75" y="730.9859154929577"/>
+        </scene>
+        <!--영상-->
+        <scene sceneID="txX-Fm-wsd">
+            <objects>
+                <viewController id="q9y-JO-85V" customClass="PlayVideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nQ4-fi-6xk"/>
+                        <viewControllerLayoutGuide type="bottom" id="gli-ld-TpU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aYv-Cx-VKz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFB-v2-WPo" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nFB-v2-WPo" firstAttribute="top" secondItem="aYv-Cx-VKz" secondAttribute="top" id="4f2-jD-1Rt"/>
+                            <constraint firstAttribute="trailing" secondItem="nFB-v2-WPo" secondAttribute="trailing" id="Fh9-AJ-Xzc"/>
+                            <constraint firstAttribute="bottom" secondItem="nFB-v2-WPo" secondAttribute="bottom" id="lPD-MT-HTS"/>
+                            <constraint firstItem="nFB-v2-WPo" firstAttribute="leading" secondItem="aYv-Cx-VKz" secondAttribute="leading" id="zYu-9L-WfC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="영상" id="USL-4P-dQK"/>
+                    <connections>
+                        <outlet property="VideoView" destination="nFB-v2-WPo" id="LiL-ds-cHC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6I8-ev-eb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3860.625" y="730.9859154929577"/>
+        </scene>
+        <!--영상-->
+        <scene sceneID="DAm-st-c1Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sd3-wl-edR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="영상" image="tennis-7" id="vyr-K7-Fss"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5b0-DZ-5Tp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MXc-jJ-w62" kind="relationship" relationship="rootViewController" id="Nrk-5c-ZlU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pm-kJ-NKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1119.375" y="730.9859154929577"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home-7" width="30" height="30"/>
+        <image name="photo-iphone" width="414" height="414"/>
+        <image name="tennis-7" width="29" height="30"/>
+    </resources>
 </document>

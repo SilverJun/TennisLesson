@@ -1,0 +1,24 @@
+
+/* Class = "UITextView"; text = "안녕하십니까? 테니스넷(tennisnet.co.kr)운영자 정진화입니다.\n정진화테니스레슨 동영상을 언제, 어디서, 누구나, 쉽게 접근하여 볼 수 있도록 테니스기술(서브, 포핸드, 백핸드, 포핸드발리, 백핸드발리, 스매쉬, 리턴, 로브, 어프로치샷)을 찾기 쉽게 정리하였습니다. 레슨동영상을 보시고 테니스코트에서 연습하여 테니스를 통해서 건강하고 행복한 삶을 영위하시기를 바랍니다.\n\n테니스넷 : http://www.tennisnet.co.kr/"; ObjectID = "7fK-zc-XLH"; */
+"7fK-zc-XLH.text" = "안녕하십니까? 테니스넷(tennisnet.co.kr)운영자 정진화입니다.\n정진화테니스레슨 동영상을 언제, 어디서, 누구나, 쉽게 접근하여 볼 수 있도록 테니스기술(서브, 포핸드, 백핸드, 포핸드발리, 백핸드발리, 스매쉬, 리턴, 로브, 어프로치샷)을 찾기 쉽게 정리하였습니다. 레슨동영상을 보시고 테니스코트에서 연습하여 테니스를 통해서 건강하고 행복한 삶을 영위하시기를 바랍니다.\n\n테니스넷 : http://www.tennisnet.co.kr/";
+
+/* Class = "UINavigationItem"; title = "영상"; ObjectID = "Eaw-Wx-88R"; */
+"Eaw-Wx-88R.title" = "영상";
+
+/* Class = "UINavigationItem"; title = "정진화 테니스레슨"; ObjectID = "Jk8-Yv-CWv"; */
+"Jk8-Yv-CWv.title" = "정진화 테니스레슨";
+
+/* Class = "UITabBarItem"; title = "소개"; ObjectID = "MOD-uL-zlD"; */
+"MOD-uL-zlD.title" = "소개";
+
+/* Class = "UILabel"; text = "정진화 테니스레슨"; ObjectID = "Rjx-Pt-d4p"; */
+"Rjx-Pt-d4p.text" = "정진화 테니스레슨";
+
+/* Class = "UINavigationItem"; title = "영상"; ObjectID = "USL-4P-dQK"; */
+"USL-4P-dQK.title" = "영상";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pER-DV-Ja5"; */
+"pER-DV-Ja5.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "영상"; ObjectID = "vyr-K7-Fss"; */
+"vyr-K7-Fss.title" = "영상";
